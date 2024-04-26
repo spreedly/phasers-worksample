@@ -2,7 +2,7 @@
 FROM ruby:3.2.3
 LABEL maintainer="ops@spreedly.com"
 
-ENV NODE_VERSION=8.x
+ENV NODE_VERSION=20.x
 COPY script/install_node.sh /tmp
 RUN /tmp/install_node.sh
 
