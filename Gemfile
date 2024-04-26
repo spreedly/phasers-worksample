@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.7.5'
-gem 'threatstack-agent-ruby', :source => 'https://pkg.threatstack.com/appsec/ruby/'
+ruby '3.2.3'
+
 gem 'rails'
 gem 'jquery-rails'
 gem 'httparty'

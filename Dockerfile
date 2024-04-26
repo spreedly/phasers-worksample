@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM ruby:2.7.5
+FROM ruby:3.2.3
 LABEL maintainer="ops@spreedly.com"
 
 ENV NODE_VERSION=8.x
