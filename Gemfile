@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.6'
+ruby '2.7.5'
 gem 'threatstack-agent-ruby', :source => 'https://pkg.threatstack.com/appsec/ruby/'
 gem 'rails'
 gem 'jquery-rails'
