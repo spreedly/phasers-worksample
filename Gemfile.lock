@@ -88,6 +88,8 @@ GEM
     awesome_print (1.9.2)
     base64 (0.2.0)
     bigdecimal (3.1.7)
+    bootsnap (1.18.3)
+      msgpack (~> 1.2)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
@@ -103,6 +105,7 @@ GEM
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
+    csv (3.3.0)
     date (3.3.4)
     drb (2.2.1)
     dynamic_form (1.3.1)
@@ -113,11 +116,16 @@ GEM
     ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    httparty (0.21.0)
+    httparty (0.22.0)
+      csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
     i18n (1.14.4)
       concurrent-ruby (~> 1.0)
+    importmap-rails (2.0.1)
+      actionpack (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.7.2)
     irb (1.12.0)
       rdoc
@@ -142,6 +150,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.6)
     minitest (5.22.3)
+    msgpack (1.7.2)
     multi_xml (0.6.0)
     mutex_m (0.2.0)
     net-imap (0.4.10)
@@ -156,6 +165,10 @@ GEM
     nio4r (2.7.1)
     nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    nokogiri (1.16.4-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     psych (5.1.2)
       stringio
@@ -203,7 +216,7 @@ GEM
       ffi (~> 1.0)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
-    reline (0.5.3)
+    reline (0.5.4)
       io-console (~> 0.5)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -238,19 +251,23 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   activeresource
   awesome_print
+  bootsnap
   bootstrap-sass
   coffee-rails
   colored
   dynamic_form
   httparty
+  importmap-rails
   jquery-rails
   listen
   log_buddy
-  nokogiri
+  nokogiri (~> 1.16)
   rails
   sass-rails
   uglifier
@@ -259,4 +276,4 @@ RUBY VERSION
    ruby 3.2.3p146
 
 BUNDLED WITH
-   2.4.21
+   2.5.9

@@ -23,7 +23,7 @@ Bundler.require(*Rails.groups)
 module PhasersSample
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
+    config.load_defaults 7.1
 
     config.encoding = "utf-8"
     config.autoload_paths += %W(#{config.root}/lib)
