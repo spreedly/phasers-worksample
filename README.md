@@ -9,3 +9,7 @@ It uses the [httparty](https://github.com/jnunemaker/httparty) gem.
 ## Heroku Deployment
 
 Phasers Worksample is deployed to Heroku as a container application. See https://devcenter.heroku.com/articles/container-registry-and-runtime#getting-started for details on this process.
+
+## Docker Hub
+
+Docker image builds are setup in Docker Hub to be built automatically upon pushing changes to GitHub. This requires GitHub to be connected to Docker Hub.
